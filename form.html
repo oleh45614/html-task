@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+      <h1>Опитування</h1>
+    </header>
+
+    <nav>
+       <a href="index.html">Стаття</a>
+    </nav>
+
+    <section>
+       <h2>Ваші дані:</h2>
+       <form method="POST" action="https://formspree.io/mzbrpnea">
+        <br>
+        <label>Ім'я:
+            <input type="text" placeholder="Name" required name="name">  
+        </label>  
+        <br>
+        <label>Email:
+            <input type="email" placeholder="Email" required name="email">  
+        </label>  
+        <br>
+        <label>Стать:</label>
+        <label>
+          <input type="radio" name="gender" value="male">Чоловіча
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female">Жіноча
+        </label>
+        <label>
+          <input type="radio" name="gender" value="other">Інша
+        </label>
+        <br>
+        <section>
+            <h2>Бутьте уважними!!</h2>
+            <p>1.Оберіть ваш колір:</p>
+            <label>
+              <input type="color" name="bg" value="#ff0000">
+            </label>
+            <p>2.Колір який ви найчастише зустрічайте?</p> 
+            <label>
+              <input type="color" name="bg" value="#ff0000">
+            </label>
+            <p>3.Чи червоний колір присутній на вашому національному прапорі?</p>
+            <label>
+               <input type="radio" name="flag" value="Yes">Так
+            </label>
+            <label>
+               <input type="radio" name="flag" value="No">Ні
+            </label>
+            <p>4.Скількі в вас любимих кольорів?</p>
+            <input type="number" name="tentacles"  min="0" max="100">
+        </section>
+        <input type="submit">
+       </form>
+    </section>
+</body>
+</html>
